@@ -44,6 +44,15 @@ npm run build
 npm run start
 ```
 
+In development environment:
+
+- frontend open browser [http://localhost:5173](http://localhost:5173)
+- backend open browser [http://localhost:3000/api](http://localhost:3000/api)
+
+In production environment:
+
+- fullstack open browser [http://localhost:3000](http://localhost:3000)
+
 ## License
 
 `pt-blog` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
