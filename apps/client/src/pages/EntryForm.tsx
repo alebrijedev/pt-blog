@@ -10,8 +10,10 @@ import {
 
 import { Form, Formik } from "formik"
 import axios from "axios"
+import { useNavigate } from 'react-router-dom'
 
 function EntryForm() {
+    const navigate = useNavigate()
     return (
         <Box maxW="480px">
             <Formik
@@ -26,6 +28,7 @@ function EntryForm() {
                         .then((res) => {
                             console.log(res)
                             actions.resetForm()
+                            navigate("/")
                         })
                         .catch((err) => {
                             console.error(err)
